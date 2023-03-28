@@ -102,7 +102,7 @@ class AlexNet(object):
             # convert data and label to be compatible with the device
             data = data.to(self.device)
             data = data.float()
-            label = label.to(self.device)
+            label = label.to(self.device).to(torch.int64)
 
             # zero the parameter gradients
             optimizer.zero_grad()

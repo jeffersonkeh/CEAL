@@ -37,7 +37,7 @@ class Caltech256Dataset(Dataset):
         list of integers (labels)
     """
 
-    def __init__(self, root_dir: str = "calthec256",
+    def __init__(self, root_dir: str = "caltech256",
                  transform: Optional[Callable] = None):
 
         self.root_dir = os.path.expanduser(root_dir)
